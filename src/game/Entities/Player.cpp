@@ -3623,8 +3623,8 @@ uint32 Player::resetTalentsCost() const
     // After that it increases in increments of 5 gold
     int32 new_cost = m_resetTalentsCost + 5 * GOLD;
     // until it hits a cap of 50 gold.
-    if (new_cost > 50 * GOLD)
-        new_cost = 50 * GOLD;
+    if (new_cost > 20 * GOLD)
+        new_cost = 20 * GOLD;
     return new_cost;
 }
 
